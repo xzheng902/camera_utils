@@ -1,2 +1,2 @@
 # camera_utils
-Two Point Grey camera calibration and acquisition
+multi-camera calibration and acquisition utils, for blackfly s cameras
