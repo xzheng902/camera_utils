@@ -1,13 +1,12 @@
 %%
 
 boardSize = [7,9];
-squareSize = 30;
-tagSize = 30; % in millimeters
+tagSize = 16; % in millimeters
 worldPoints = generateCheckerboardPoints(boardSize, tagSize);
-worldPoints(:,2) = 150-worldPoints(:,2);
+worldPoints(:,2) = 80-worldPoints(:,2);
 
 %%
-serialnum = "20181897";
+serialnum = "20104308";
 
 filename = "extrinsic_"+serialnum+".png";
 imOrig = imread(filename);
@@ -92,4 +91,4 @@ TDistort = cameraParams.TangentialDistortion;
 r = rotationMatrix;
 t = translationVector;
 
-% save('cam2_params.mat', 'K', 'RDistort', 'TDistort', 'r', 't');
+save('cam0_params.mat', 'K', 'RDistort', 'TDistort', 'r', 't');

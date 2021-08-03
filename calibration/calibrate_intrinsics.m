@@ -12,7 +12,7 @@ tagFamily = 'tag36h11';
 %%
 
 % Create an imageDatastore object to store the captured images.
-imdsCalib = imageDatastore("calibration_images_20181897/");
+imdsCalib = imageDatastore("images/calibration_images_20181897/");
 
 % Detect the calibration pattern from the images.
 [imagePoints, boardSize] = helperDetectAprilTagCorners(imdsCalib, tagArrangement, tagFamily);
@@ -20,7 +20,7 @@ imdsCalib = imageDatastore("calibration_images_20181897/");
 %%
 
 % Generate world point coordinates for the pattern.
-tagSize = 30; % in millimeters
+tagSize = 16; % in millimeters
 worldPoints = generateCheckerboardPoints(boardSize, tagSize);
 
 %%
@@ -46,15 +46,15 @@ showExtrinsics(params)
 save('cameraParams_20181897.mat', 'params');
 
 %%
-% % Read a calibration image.
-% I = readimage(imdsCalib, 3);
-% 
-% % Insert markers for the detected and reprojected points.
-% I = insertMarker(I, imagePoints(:,:,3), 'o', 'Color', 'g', 'Size', 5);
-% I = insertMarker(I, imagePoints(1,:,3), 'o', 'Color', 'y', 'Size', 5);
-% I = insertMarker(I, imagePoints(2,:,3), 'x', 'Color', 'y', 'Size', 5);
-% % I = insertMarker(I, params.ReprojectedPoints(:,:,10), 'x', 'Color', 'r', 'Size', 5);
-% 
-% % Display the image.
-% figure
-% imshow(I)
+% Read a calibration image.
+I = readimage(imdsCalib, 3);
+
+% Insert markers for the detected and reprojected points.
+I = insertMarker(I, imagePoints(:,:,3), 'o', 'Color', 'g', 'Size', 5);
+I = insertMarker(I, imagePoints(1,:,3), 'o', 'Color', 'y', 'Size', 5);
+I = insertMarker(I, imagePoints(2,:,3), 'x', 'Color', 'y', 'Size', 5);
+% I = insertMarker(I, params.ReprojectedPoints(:,:,10), 'x', 'Color', 'r', 'Size', 5);
+
+% Display the image.
+figure
+imshow(I)

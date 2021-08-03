@@ -2,8 +2,8 @@
 <WorkflowBuilder Version="2.6.0"
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xmlns:wie="clr-namespace:Bonsai.Windows.Input;assembly=Bonsai.Windows.Input"
-                 xmlns:io="clr-namespace:Bonsai.IO;assembly=Bonsai.System"
                  xmlns:rx="clr-namespace:Bonsai.Reactive;assembly=Bonsai.Core"
+                 xmlns:io="clr-namespace:Bonsai.IO;assembly=Bonsai.System"
                  xmlns:spk="clr-namespace:Bonsai.Spinnaker;assembly=Bonsai.Spinnaker"
                  xmlns:cv="clr-namespace:Bonsai.Vision;assembly=Bonsai.Vision"
                  xmlns="https://bonsai-rx.org/2018/workflow">
@@ -33,7 +33,7 @@
       </Expression>
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="io:SerialStringWrite">
-          <io:PortName>COM3</io:PortName>
+          <io:PortName>COM8</io:PortName>
           <io:NewLine>\r\n</io:NewLine>
         </Combinator>
       </Expression>
@@ -61,7 +61,7 @@
       </Expression>
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="io:SerialStringWrite">
-          <io:PortName>COM3</io:PortName>
+          <io:PortName>COM8</io:PortName>
           <io:NewLine>\r\n</io:NewLine>
         </Combinator>
       </Expression>
@@ -78,7 +78,7 @@
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="spk:SpinnakerCapture">
                 <spk:Index xsi:nil="true" />
-                <spk:SerialNumber />
+                <spk:SerialNumber>20104308</spk:SerialNumber>
                 <spk:ColorProcessing>NoColorProcessing</spk:ColorProcessing>
               </Combinator>
             </Expression>
@@ -90,7 +90,7 @@
                   </Expression>
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="BooleanProperty">
-                      <Value>false</Value>
+                      <Value>true</Value>
                     </Combinator>
                   </Expression>
                   <Expression xsi:type="WorkflowOutput" />
@@ -144,7 +144,7 @@
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="spk:SpinnakerCapture">
                 <spk:Index xsi:nil="true" />
-                <spk:SerialNumber />
+                <spk:SerialNumber>20104310</spk:SerialNumber>
                 <spk:ColorProcessing>NoColorProcessing</spk:ColorProcessing>
               </Combinator>
             </Expression>
@@ -156,7 +156,7 @@
                   </Expression>
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="BooleanProperty">
-                      <Value>false</Value>
+                      <Value>true</Value>
                     </Combinator>
                   </Expression>
                   <Expression xsi:type="WorkflowOutput" />
@@ -210,7 +210,7 @@
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="spk:SpinnakerCapture">
                 <spk:Index xsi:nil="true" />
-                <spk:SerialNumber />
+                <spk:SerialNumber>20181897</spk:SerialNumber>
                 <spk:ColorProcessing>NoColorProcessing</spk:ColorProcessing>
               </Combinator>
             </Expression>
@@ -222,7 +222,7 @@
                   </Expression>
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="BooleanProperty">
-                      <Value>false</Value>
+                      <Value>true</Value>
                     </Combinator>
                   </Expression>
                   <Expression xsi:type="WorkflowOutput" />

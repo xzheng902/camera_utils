@@ -57,7 +57,7 @@ while not all(pipes_open):
             if pipe.split('\\')[-1] in os.listdir(r'\\.\pipe'):
                 pipes_open[i] = True
                 video_file_path = os.path.join(data_dir, subject + '_' + datetime_str + '.mp4')
-                ffmpeg_processes.append(Popen(r'ffmpeg -y -f rawvideo -vcodec rawvideo -s 1152x1024 -pix_fmt bayer_rggb8 -r 50 -i {} -c:v h264_nvenc -profile:v high -preset slow -an {}'.format(pipe, video_file_path)))
+                ffmpeg_processes.append(Popen(r'ffmpeg -y -f rawvideo -vcodec rawvideo -s 1152x1024 -pix_fmt bayer_rggb8 -r 100 -i {} -c:v h264_nvenc -profile:v high -preset slow -an {}'.format(pipe, video_file_path)))
     time.sleep(0.1)
 
 # Wait untill Bonsai has stopped running.

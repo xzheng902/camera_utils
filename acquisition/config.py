@@ -18,4 +18,4 @@ camera_IDs = {1: '20104308',
 
 bonsai_path = 'C:\\Users\\banerjeelab\\AppData\\Local\\Bonsai\\Bonsai.exe'
 
-workflow_path = 'C:\\Users\\banerjeelab\\Projects\\camera_utils\\acquisition_new\\multi_acquisition_trigger.bonsai'
+workflow_path = 'C:\\Users\\banerjeelab\\Projects\\camera_utils\\acquisition\\multi_acquisition_trigger.bonsai'
