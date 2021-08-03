@@ -12,7 +12,7 @@ tagFamily = 'tag36h11';
 %%
 
 % Create an imageDatastore object to store the captured images.
-imdsCalib = imageDatastore("images/calibration_images_20181897/");
+imdsCalib = imageDatastore("images/calibration_images_20104310/");
 
 % Detect the calibration pattern from the images.
 [imagePoints, boardSize] = helperDetectAprilTagCorners(imdsCalib, tagArrangement, tagFamily);
@@ -43,7 +43,7 @@ showExtrinsics(params)
 
 %%
 
-save('cameraParams_20181897.mat', 'params');
+save('cameraParams_20104310.mat', 'params');
 
 %%
 % Read a calibration image.
