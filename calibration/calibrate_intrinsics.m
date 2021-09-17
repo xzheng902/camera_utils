@@ -12,7 +12,7 @@ tagFamily = 'tag36h11';
 %%
 
 % Create an imageDatastore object to store the captured images.
-imdsCalib = imageDatastore("images/calibration_images_20104310/");
+imdsCalib = imageDatastore("images/calibration_images_20181897/");
 
 % Detect the calibration pattern from the images.
 [imagePoints, boardSize] = helperDetectAprilTagCorners(imdsCalib, tagArrangement, tagFamily);
@@ -20,7 +20,7 @@ imdsCalib = imageDatastore("images/calibration_images_20104310/");
 %%
 
 % Generate world point coordinates for the pattern.
-tagSize = 16; % in millimeters
+tagSize = 18; % in millimeters
 worldPoints = generateCheckerboardPoints(boardSize, tagSize);
 
 %%
@@ -43,7 +43,7 @@ showExtrinsics(params)
 
 %%
 
-save('cameraParams_20104310.mat', 'params');
+save('cameraParams_20181897.mat', 'params');
 
 %%
 % Read a calibration image.

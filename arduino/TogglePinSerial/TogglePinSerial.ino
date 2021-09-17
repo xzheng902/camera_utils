@@ -1,7 +1,7 @@
 int pinState = 0;
 String MyString = "0";
 int MyPin = 12;
-int MyDelay = 10;
+int MyDelay = 9939;
 
 void setup() {
   // put your setup code here, to run once:
@@ -17,7 +17,7 @@ void loop() {
     pinState = MyString.toInt();
   }
   digitalWrite(MyPin,pinState);
-  delay(MyDelay);
+  delayMicroseconds(MyDelay);
   digitalWrite(MyPin,LOW);
-  delay(MyDelay);
+  delayMicroseconds(MyDelay);
 }
