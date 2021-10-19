@@ -33,6 +33,7 @@ for idx = 1:numImages
         imagePoints(:,:,idx) = tagLocs(checkerIdx(:),:);
         imagesUsed(idx) = true; 
     else
+        disp(imdsCalib.Files{idx});
         imagePoints(:,:,idx) = [];
     end
     

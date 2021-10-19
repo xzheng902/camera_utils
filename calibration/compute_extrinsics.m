@@ -1,7 +1,7 @@
 %%
 
 boardSize = [7,9];
-tagSize = 24; % in millimeters
+tagSize = 28; % in millimeters
 worldPoints = generateCheckerboardPoints(boardSize, tagSize);
 worldPoints(:,2) = 120-worldPoints(:,2);
 
@@ -91,4 +91,4 @@ TDistort = cameraParams.TangentialDistortion;
 r = rotationMatrix;
 t = translationVector;
 
-save('cam1_params.mat', 'K', 'RDistort', 'TDistort', 'r', 't');
+% save('cam2_params.mat', 'K', 'RDistort', 'TDistort', 'r', 't');
