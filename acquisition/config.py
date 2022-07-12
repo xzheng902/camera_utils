@@ -6,7 +6,8 @@ subjects = {1:'cam0',
             2:'cam1',
             3:'cam2'}
 
-data_dir = 'D:\\videos\\singingmouse\\MZ04_100521'  # Directory where data will be saved.
+# data_dir = 'D:\\videos\\labmouse\\ACC05\\220621'
+data_dir = 'D:\\videos\\singingmouse\\MZ11\\220622'  # Directory where data will be saved.
 
 # Hardware config.
 

@@ -1,9 +1,14 @@
 %%
 
-boardSize = [7,9];
-tagSize = 28; % in millimeters
+close all;
+clear all;
+
+%%
+
+boardSize = [5,7];
+tagSize = 46; % in millimeters
 worldPoints = generateCheckerboardPoints(boardSize, tagSize);
-worldPoints(:,2) = 120-worldPoints(:,2);
+worldPoints(:,2) = 138-worldPoints(:,2);
 
 %%
 serialnum = "20104310";
@@ -20,7 +25,7 @@ cameraParams = tmpstruct.(names{1});
 [im, newOrigin] = undistortImage(imOrig, cameraParams, 'OutputView', 'full');
 
 % Set the properties of the calibration pattern.
-tagArrangement = [3,4];
+tagArrangement = [2,3];
 tagFamily = 'tag36h11';
 
 % Get the pattern size from tagArrangement.
@@ -91,4 +96,4 @@ TDistort = cameraParams.TangentialDistortion;
 r = rotationMatrix;
 t = translationVector;
 
-% save('cam2_params.mat', 'K', 'RDistort', 'TDistort', 'r', 't');
+save('cam1_params.mat', 'K', 'RDistort', 'TDistort', 'r', 't');

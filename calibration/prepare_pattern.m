@@ -25,7 +25,7 @@ end
 
 % Set the properties of the calibration pattern.
 % tagArrangement = [5,8];
-tagArrangement = [3,4];
+tagArrangement = [2,3];
 tagFamily = 'tag36h11';
 
 % Generate the calibration pattern using AprilTags.
