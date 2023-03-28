@@ -6,8 +6,11 @@ subjects = {1:'cam0',
             2:'cam1',
             3:'cam2'}
 
-# data_dir = 'D:\\videos\\labmouse\\ACC05\\220621'
-data_dir = 'D:\\videos\\singingmouse\\MZ11\\220622'  # Directory where data will be saved.
+# data_dir = 'D:\\videos\\\\PAG04\\221231'
+# data_dir = 'D:\\videos\\labmouse\\U01\\230117'  # Directory where data will be saved.
+data_dir = 'D:\\videos\\singingmouse\\dyad\\230315'
+# data_dir = 'D:\\videos\\test'
+# data_dir = 'D:\\videos\\homecage_dyad'
 
 # Hardware config.
 
@@ -20,3 +23,4 @@ camera_IDs = {1: '20104308',
 bonsai_path = 'C:\\Users\\banerjeelab\\AppData\\Local\\Bonsai\\Bonsai.exe'
 
 workflow_path = 'C:\\Users\\banerjeelab\\Projects\\camera_utils\\acquisition\\multi_acquisition_trigger.bonsai'
+# workflow_path = 'C:\\Users\\banerjeelab\\Projects\\camera_utils\\acquisition\\multi_acquisition_trigger_opto.bonsai'

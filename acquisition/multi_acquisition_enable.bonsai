@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WorkflowBuilder Version="2.6.0"
+<WorkflowBuilder Version="2.6.3"
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xmlns:wie="clr-namespace:Bonsai.Windows.Input;assembly=Bonsai.Windows.Input"
                  xmlns:rx="clr-namespace:Bonsai.Reactive;assembly=Bonsai.Core"
@@ -32,7 +32,7 @@
       </Expression>
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="io:SerialStringWrite">
-          <io:PortName>COM8</io:PortName>
+          <io:PortName>COM4</io:PortName>
           <io:NewLine>\r\n</io:NewLine>
         </Combinator>
       </Expression>
@@ -60,7 +60,7 @@
       </Expression>
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="io:SerialStringWrite">
-          <io:PortName>COM8</io:PortName>
+          <io:PortName>COM4</io:PortName>
           <io:NewLine>\r\n</io:NewLine>
         </Combinator>
       </Expression>
